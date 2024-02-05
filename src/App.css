@@ -63,11 +63,22 @@
   }
 }
 
+.text-mini {
+  font-size: .15rem;
+  color: gray;
+}
+
+.text-sub-title {
+  font-size: .75rem;
+  color: rgb(76, 76, 76);
+}
+
 /*Base*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 html {
@@ -148,7 +159,7 @@ img {
 }
 
 
-/*Buttons*/
+/*buttons*/
 .button {
   display: inline-block;
   background-color: var(--title-color);
@@ -169,6 +180,47 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
+}
+
+.title {
+  color: #262628;
+  /* Gray-500 */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sub-title {
+  color: #262628;
+  /* Gray-500 */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text {
+  color: #6b7280;
+  /* Gray-500 */
+  font-size: .75rem;
+}
+
+.button {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.75rem;
+  /* Adjust as needed */
+  padding-top: 0.25rem;
+  /* Adjust as needed */
+  padding-bottom: 0.25rem;
+  /* Adjust as needed */
+  padding-left: 0.75rem;
+  /* Adjust as needed */
+  padding-right: 0.75rem;
+  /* Adjust as needed */
+  border-radius: 0.25rem;
+  /* Adjust as needed */
+}
+
+.button:hover {
+  background-color: #3d3d3d;
 }
 
 /*------------Breakpoints----------------*/

@@ -1,0 +1,9 @@
+.text-mini {
+    font-size: .15rem;
+    color: gray;
+}
+
+.text-sub-title {
+    font-size: .75rem;
+    color: rgb(76, 76, 76);
+}

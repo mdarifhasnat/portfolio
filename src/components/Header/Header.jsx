@@ -1,59 +1,69 @@
 import React from "react";
-import { FaDiscord, FaGithub, FaInstagram } from "react-icons/fa";
+import {
+  FaDiscord,
+  FaGithub,
+  FaInstagram,
+  FaTelegramPlane,
+} from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa6";
+import profile from "../../assets/about.jpg";
 import handsWave from "../../assets/images.png";
-import profile from "../../assets/profile.jpg";
+import scrollBar from "../../assets/scroll.svg";
 import "./header.css";
 
 const Header = () => {
   return (
-    <div className="flex mt-10 px-2 items-center justify-between">
-      {/* Social Icons */}
-      <div className="mr-8 text-gray-700">
-        <a href="">
-          {" "}
-          <FaInstagram className="mb-3" />
-        </a>
-        <a href="">
-          <FaDiscord className="mb-3" />
-        </a>
-        <a href="">
-          <FaGithub />
-        </a>
-      </div>
-
-      {/* Text Content */}
-      <div className="justify-center ">
-        <div className="flex items-center">
-          <h2 className="text-2xl font-bold text-gray-700">Md Arif Hasnat</h2>
-          <img src={handsWave} alt="hello people" className="w-5 h- ml-2" />
+    <>
+      <div className="flex mt-10 px-2 items-center justify-between">
+        {/* Social Icons */}
+        <div className="mr-8 text-gray-700">
+          <a href="">
+            <FaInstagram className="mb-3" />
+          </a>
+          <a href="">
+            <FaDiscord className="mb-3" />
+          </a>
+          <a href="">
+            <FaGithub />
+          </a>
         </div>
 
-        <h6 className="text-gray-500 text-sm">Frontend Developer</h6>
-        <p className="text-gray-500 text-xs mt-2">
-          I'm a creative web application designer based in Dusseldorf and I'm
-          very passionate and dedicated to my work.
-        </p>
-      </div>
+        {/* Text Content */}
+        <div className="justify-center ">
+          <div className="flex items-center">
+            <h2 className="title">Md Arif Hasnat</h2>
+            <img src={handsWave} alt="hello people" className="w-5 ml-2" />
+          </div>
 
-      {/* Image */}
-      <div className="animate  ml-10 pr-4">
-        {/*<img src={profile} alt="" className="w-[600px]" />*/}
-        <img
-          className="w-[500px] border-4 border-dashed border-gray-500"
-          src={profile}
-          alt="Your Image"
-        ></img>
+          <h6 className="text-gray-500 text-sm">Frontend Developer</h6>
+          <p className="text-gray-500 text-xs mt-2">
+            I'm a creative web application designer based in Dusseldorf{" "}
+            <br></br>
+            and I'm very passionate and dedicated to my work.
+          </p>
+          <button className="button mt-6">
+            Say Hello
+            <FaTelegramPlane className="ml-1 inline-block align-text-bottom" />
+          </button>
+        </div>
+
+        {/* Image */}
+
+        <div className="ml-6 mr-6 rounded">
+          {/*<img src={profile} alt="" className="w-[600px]" />*/}
+          <div className="w-[200px]">
+            <img className="rounded-full" src={profile} alt="Your Image"></img>
+          </div>
+        </div>
       </div>
-      <div className="relative w-64 h-64">
-        {/*<img src={profile} alt="" className="w-[600px]" />*/}
-        <img
-          src={profile}
-          alt="Your Image"
-          class="w-full h-full object-cover rounded-lg"
-        ></img>
-        <div class="absolute inset-0 border-8 border-r-0 border-l-0  border-gray-500 animate-border"></div>
+      <div className="grid grid-cols-6  mt-20 items-center text-xs">
+        <div className="col-start-2 col-span-4 flex items-center ">
+          <img src={scrollBar} alt="scroll-bar" />
+          Scroll Down
+          <FaArrowDown style={{ fontSize: "8px", marginLeft: "2px" }} />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
