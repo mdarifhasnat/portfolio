@@ -11,8 +11,6 @@ import Skills from "./components/Skills/Skills";
 const App = () => {
   return (
     <div className="ml-32 mr-32 font-serif">
-      {/*<Navbar />
-      <Nav2 />*/}
       <Nav3 />
       <Header />
       <About />
